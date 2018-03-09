@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Hanalei|Megrim');
+
+#body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  color: #333;
+  overflow-x: hidden;
+  background: linear-gradient(rgba(81, 64, 32, .8), rgba(64, 48, 16, .8)),
+  url("background.jpg");
+  margin: 20px 0px;
+}
+
+.header h1 {
+  
+  text-align: center;
+  font-family: 'Megrim', cursive;
+  font-size: 5em;
+  font-weight: bold;
+  text-shadow: 3px 3px #555;
+  color: #d84;
+  
+}
+
+.row {
+
+  padding: 0px 20px;
+
+}
+
+#unassigned h2,
+#goodguys h2 {
+  padding: 0;
+  font-size: 4em;
+  font-family: 'Megrim', times;
+  font-weight: bold;
+  color: #981;
+  text-shadow: 2px 2px #555;
+}
+
+#goodguys, 
+#unassigned {
+  
+	height: auto;
+	background: linear-gradient(rgba(220, 192, 128, .85), rgba(228, 192, 128, .85)),
+	url("inset-background.jpg");
+	text-align: center;
+  box-shadow: 
+    0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+    0px 0px 12px rgba( 0,0,0,0.33 );
+  border-radius: 5px;
+  padding:  10px 20px;
+
+}
+
+.hieroglyph-row {
+  
+  position: relative;
+  width: 100%;
+  margin: 5px 0px;
+    height: 100px;
+  display: inline;
+  border-style: solid;
+  border-width: 6px;
+  border-color: #b97;
+  float: left;
+  
+}
+
+.user {
+
+	display: inline;
+	margin: 5px 5px;
+	background: #ddd;	
+	cursor: move;
+}
+
+.clear {
+	clear: both;
+}
