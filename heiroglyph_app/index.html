@@ -12,18 +12,20 @@
   </div>
   <div class="row">
     <div class="col-sm-10 col-md-4">
-	<div id="unassigned" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false">
+	<div id="unassigned" ondrop="dropUser(this, event);" ondragenter="return false" ondragover="return false">
     <h2>Themes</h2>
     <!--These are all the draggable peices-->
-		<img src="heiroglyph_jpg_images/arm.jpg" draggable="true" class="user" id="leonardo" ondragstart="dragUser(this, event)"></img>
-		<img src="heiroglyph_jpg_images/foot.jpg" draggable="true" class="user" id="raphael" ondragstart="dragUser(this, event)"></img> 
-		<img src="heiroglyph_jpg_images/chrome.jpg" draggable="true" class="user" id="chrome" ondragstart="dragUser(this, event)"></div>
-  </div>
+		<img src="heiroglyph_jpg_images/arm.jpg" draggable="true" class="user" id="arm-image" ondragstart="dragUser(this, event)"></img>
+		<img src="heiroglyph_jpg_images/foot.jpg" draggable="true" class="user" id="foot-image" ondragstart="dragUser(this, event)"></img> 
+		<img src="heiroglyph_jpg_images/chrome.jpg" draggable="true" class="user" id="chrome-image" ondragstart="dragUser(this, event)"></img>
+		<img src="heiroglyph_jpg_images/fire.jpg" draggable="true" class="user" id="fire-image" ondragstart="dragUser(this, event)"></img>
+		</div>
+		</div>
 
  <!-- You should only be able to drag good guys in this section-->
 	<div id="goodguys" class="col-sm-10 col-md-8">
     <h2>Wall</h2>
-    <div class="hieroglyph-row" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false">
+    <div class="hieroglyph-row" ondrop="dropUser(this, event), cloneUser(this, event)" ondragenter="return false" ondragover="return false">
     </div>
     <div class="hieroglyph-row" ondrop="dropUser(this, event)" ondragenter="return false" ondragover="return false">
       </div>
