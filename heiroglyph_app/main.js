@@ -1,18 +1,18 @@
 function dragUser(user, event) {
 
-    event.dataTransfer.setData('User', user.id);		
+	user1 = user.cloneNode(false);
+	user.parentNode.appendChild(user1);	
+    event.dataTransfer.setData('User', user.id);
 
 }
 function dropUser(target, event) {
     var user = event.dataTransfer.getData('User');
-    target.appendChild(document.getElementById(user)); 	
+    target.appendChild(document.getElementById(user));	
 
 }
 
 function cloneUser(user, event) {
 	
 	var user = event.dataTransfer.getData('User');
-	user1 = user.cloneNode(true);
-	user.parentNode.appendChild(user1);
 	
 }
