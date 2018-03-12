@@ -1,18 +1,9 @@
-function dragUser(user, event) {
-
-	user1 = user.cloneNode(false);
-	user.parentNode.appendChild(user1);	
-    event.dataTransfer.setData('User', user.id);
-
-}
-function dropUser(target, event) {
-    var user = event.dataTransfer.getData('User');
-    target.appendChild(document.getElementById(user));	
-
-}
-
-function cloneUser(user, event) {
-	
-	var user = event.dataTransfer.getData('User');
-	
-}
+$( function drag() {
+  $('div[type="item"]').draggable({containment: '#main-container', helper: 'clone'});
+  $("#main-container").droppable({drop: function( event, ui ) {
+        $( this ).html( "Dropped!" );
+		$('#main-container').offset('0');
+	  }                      
+});
+  
+});
